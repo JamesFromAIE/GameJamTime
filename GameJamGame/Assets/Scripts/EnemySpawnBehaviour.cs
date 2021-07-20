@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawnBehaviour : MonoBehaviour
 {
-    [SerializeField] GameObject Survivor;
+    [SerializeField] Transform Survivor;
     [SerializeField] Transform SP1;
     [SerializeField] Transform SP2;
     [SerializeField] Transform SP3;
@@ -16,19 +16,19 @@ public class EnemySpawnBehaviour : MonoBehaviour
 
         if (targetPoint == 1)
         {
-            Survivor.transform.position = SP1.position;
+            Survivor = SP1;
         }
         else if (targetPoint == 2)
         {
-            Survivor.transform.position = SP2.position;
+            Survivor = SP2;
         }
         else if (targetPoint == 3)
         {
-            Survivor.transform.position = SP3.position;
+            Survivor = SP3;
         }
         else
         {
-            Survivor.transform.position = SP4.position;
+            Survivor = SP4;
         }
     }
 }
