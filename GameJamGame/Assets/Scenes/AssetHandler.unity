@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8102428736552156394, guid: 9c27e3ed93c62634dbf2d80ff03c7be9, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8102428736552156394, guid: 9c27e3ed93c62634dbf2d80ff03c7be9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -621,13 +621,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 5508130658052036698, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 8103946129848360557, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -723,13 +716,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 5508130658052036698, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 8103946129848360557, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -886,7 +872,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &999943543
 PrefabInstance:
@@ -1733,13 +1719,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 5508130658052036698, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 8103946129848360557, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -1963,13 +1942,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 5508130658052036698, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 8103946129848360557, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -2137,13 +2109,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 5508130658052036698, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 8103946129848360557, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
       propertyPath: m_IsTrigger
       value: 1

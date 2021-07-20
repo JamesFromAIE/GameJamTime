@@ -150,12 +150,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4117697573316698065}
-<<<<<<< Updated upstream
   - component: {fileID: 2857144092956954963}
   - component: {fileID: 5508130658052036698}
-=======
-  - component: {fileID: 8103946129848360557}
->>>>>>> Stashed changes
   - component: {fileID: 4832733046119401931}
   m_Layer: 0
   m_Name: Survivor
@@ -193,7 +189,6 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-<<<<<<< Updated upstream
   m_Size: {x: 1.0796992, y: 2.350811, z: 1.0593334}
   m_Center: {x: -0.08722681, y: 1.1724586, z: -0.012797296}
 --- !u!54 &5508130658052036698
@@ -212,10 +207,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-=======
-  m_Size: {x: 1, y: 2.583613, z: 1}
-  m_Center: {x: 0, y: 1.2663996, z: 0}
->>>>>>> Stashed changes
 --- !u!114 &4832733046119401931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,10 +221,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   survivor: {fileID: 0}
   player: {fileID: 0}
-  explosion: {fileID: 0}
   grenadePrefab: {fileID: 5966296851680607859, guid: 8b663c7fc41f46d42af0fffb9a6133f5, type: 3}
   grenadeForce: 5
-  grenadeThrowTimer: 6
+  grenadeThrowTimer: 8
   currentTimer: 0
 --- !u!1 &4648476079288521416
 GameObject:
