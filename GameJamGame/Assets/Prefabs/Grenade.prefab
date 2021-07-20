@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6451225925886698697}
   - component: {fileID: 6777322267605533478}
   - component: {fileID: 6777322267605533473}
+  - component: {fileID: 8952149914271146239}
   - component: {fileID: 6777322267605533472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,6 +144,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.3522274
   m_Center: {x: 0, y: 0.35624737, z: 0}
+--- !u!114 &8952149914271146239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5966296851680607859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ada385d50b56b4b8aac34068f1fd3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3
+  explosion: {fileID: 107206, guid: 84ccbbdbac05ee142bb5d19702bfc4a8, type: 3}
 --- !u!54 &6777322267605533472
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -170,7 +185,7 @@ GameObject:
   - component: {fileID: 5299263768492939546}
   - component: {fileID: 4173394471159144265}
   - component: {fileID: 3673229851689018197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pSphere3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

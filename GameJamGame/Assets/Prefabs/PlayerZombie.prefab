@@ -204,11 +204,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1782374617787066576}
   - component: {fileID: 4568484388169956228}
+  - component: {fileID: 1784796905210344892}
   - component: {fileID: 6888632876332441994}
+  - component: {fileID: 2149083186961692746}
   - component: {fileID: 6888632876332441993}
   - component: {fileID: 6888632876332441992}
   m_Layer: 0
-  m_Name: PlayerZombienew
+  m_Name: PlayerZombie
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,6 +248,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1784796905210344892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6888632876332441995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21c500d5ef5e2ec42bab3998fbe2a0ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravity: 9.8
 --- !u!114 &6888632876332441994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +285,18 @@ MonoBehaviour:
   Player: {fileID: 6888632876332441995}
   MoveJump: 0.05
   MoveSpeed: 0.05
+--- !u!114 &2149083186961692746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6888632876332441995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36cd60e9a8572441b1cb4cdcc952796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &6888632876332441993
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -394,4 +421,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 10
-  target: {fileID: 1782374617787066576}
+  Head: {fileID: 0}
+  Body: {fileID: 0}
