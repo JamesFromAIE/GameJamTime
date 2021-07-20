@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
     public float maxGroundDistance = 1.5f;
     private bool isGrounded;
     public float forwardsJump = 1.0f;
-    [SerializeField] float Speed;
     [SerializeField] LayerMask layerMask;
     public AudioSource LandSound;
     [SerializeField] bool GSphere;
@@ -34,11 +33,6 @@ public class PlayerController : MonoBehaviour
     {
         var colliders = Physics.OverlapSphere(transform.position, maxGroundDistance, layerMask);
         isGrounded = colliders.Length > 0;
-        if (inAir && isGrounded)
-        {
-            inAir = false;
-            Rb.velocity = Vector3.zero;
-        }
         if (!isGrounded) { inAir = true; }
     }
 
@@ -72,10 +66,16 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
         {
-            if (isGrounded)
+            if (!inAir)
             {
                 Rb.AddRelativeForce(new Vector3(Input.GetAxisRaw("Horizontal") * MoveSpeed, MoveJump, Input.GetAxisRaw("Vertical") * MoveSpeed), ForceMode.Impulse);
             }
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Rb.velocity = Vector3.zero;
+        inAir = false;
     }
 }
