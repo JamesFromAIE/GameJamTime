@@ -2,7 +2,6 @@
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float gravity = 9.8f;
     [SerializeField] float jumpForce = 5.0f;
     [SerializeField] float maxGroundDistance = 1.5f;
     private bool isGrounded;
