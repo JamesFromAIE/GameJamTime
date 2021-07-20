@@ -9,9 +9,12 @@ public class MouseLook : MonoBehaviour
     private float mouseX;
     private float mouseY;
 
-    Transform target;
+    [SerializeField] Transform target;
 
-
+    private void Update()
+    {
+        CamControl();
+    }
     void CamControl()
     {
         mouseX += Input.GetAxis("Mouse X") * rotationSpeed;
