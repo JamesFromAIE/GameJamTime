@@ -9832,11 +9832,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a147b54bcfc6646b28d0f3790b4747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Survivor: {fileID: 747645769}
+  Survivor: {fileID: 747645774}
   SP1: {fileID: 1463824448}
   SP2: {fileID: 854434581}
   SP3: {fileID: 438106705}
   SP4: {fileID: 1104166752}
+--- !u!4 &747645774 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4117697573316698065, guid: 5a17775f6d7aef7489811a28d521f148, type: 3}
+  m_PrefabInstance: {fileID: 747645768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &748966423
 PrefabInstance:
   m_ObjectHideFlags: 0
