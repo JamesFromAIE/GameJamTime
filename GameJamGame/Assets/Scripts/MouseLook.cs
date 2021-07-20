@@ -9,7 +9,8 @@ public class MouseLook : MonoBehaviour
     private float mouseX;
     private float mouseY;
 
-    [SerializeField] Transform target;
+    [SerializeField] Transform Head;
+    [SerializeField] Transform Body;
 
     private void Update()
     {
@@ -21,9 +22,10 @@ public class MouseLook : MonoBehaviour
         mouseY -= Input.GetAxis("Mouse Y") * rotationSpeed;
         mouseY = Mathf.Clamp(mouseY, -60, 40);
 
-        transform.LookAt(target);
+        transform.LookAt(Body);
 
-        target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
+        Body.rotation = Quaternion.Euler(0, mouseX, 0);
+        Head.rotation = Quaternion.Euler(mouseY, mouseX, 0);
     }
 
 }

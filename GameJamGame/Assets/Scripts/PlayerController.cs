@@ -2,15 +2,16 @@
 
 public class PlayerController : MonoBehaviour
 {
-    public float jumpForce = 5.0f;
-    public float maxGroundDistance = 1.5f;
+    [SerializeField] float gravity = 9.8f;
+    [SerializeField] float jumpForce = 5.0f;
+    [SerializeField] float maxGroundDistance = 1.5f;
     private bool isGrounded;
-    public float forwardsJump = 1.0f;
+    [SerializeField] float forwardsJump = 1.0f;
     [SerializeField] LayerMask layerMask;
-    public AudioSource LandSound;
+    [SerializeField] AudioSource LandSound;
     [SerializeField] bool GSphere;
 
-    public ChargeUp chargeUp;
+    [SerializeField] ChargeUp chargeUp;
     [SerializeField] GameObject Player;
     Rigidbody Rb;
 
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         Jump();
         Move();
+        Gravity();
     }
 
     private void OnDrawGizmos()
@@ -52,7 +54,7 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyUp("space"))
+        if (Input.GetKeyUp("space") && Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0)
         {
 
             if (isGrounded)
@@ -64,13 +66,18 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+        if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0 && !Input.GetKey("space"))
         {
             if (!inAir)
             {
                 Rb.AddRelativeForce(new Vector3(Input.GetAxisRaw("Horizontal") * MoveSpeed, MoveJump, Input.GetAxisRaw("Vertical") * MoveSpeed), ForceMode.Impulse);
             }
         }
+    }
+
+    void Gravity()
+    {
+        Rb.AddRelativeForce(new Vector3(0, -gravity, 0), ForceMode.Acceleration);
     }
 
     private void OnCollisionEnter(Collision collision)
