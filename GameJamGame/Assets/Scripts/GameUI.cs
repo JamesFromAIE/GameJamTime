@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameUI : MonoBehaviour
 {
-    public int score = 0;
+    static public int score = 0;
     public float timer = 30f;
     public int survivorNumber;
 
@@ -24,7 +24,7 @@ public class GameUI : MonoBehaviour
     {
         survivorNumber = GameObject.FindGameObjectsWithTag("Enemy").Length;
 
-        timer = timer - Time.deltaTime;
+        timer = timer + -Time.deltaTime;
 
         timer = (Mathf.Round(timer * 100) / 100);
    
@@ -33,9 +33,15 @@ public class GameUI : MonoBehaviour
         {
             SceneManager.LoadScene("AssetHandler");
 
-            score++;
+            score++; 
 
             timer = 30;
+        }
+
+        if (timer <= 0)
+        {
+
+            SceneManager.LoadScene("StartMenu");
         }
 
         UpdateUI();
