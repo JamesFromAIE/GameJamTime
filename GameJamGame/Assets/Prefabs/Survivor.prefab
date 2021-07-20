@@ -221,6 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   survivor: {fileID: 0}
   player: {fileID: 0}
+  grenadePrefab: {fileID: 5966296851680607859, guid: 8b663c7fc41f46d42af0fffb9a6133f5, type: 3}
+  grenadeForce: 10
 --- !u!1 &4648476079288521416
 GameObject:
   m_ObjectHideFlags: 0
