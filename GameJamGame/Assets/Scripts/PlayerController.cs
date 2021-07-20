@@ -42,7 +42,6 @@ public class PlayerController : MonoBehaviour
     {
         Jump();
         Move();
-        Gravity();
     }
 
     private void OnDrawGizmos()
@@ -75,10 +74,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Gravity()
-    {
-        Rb.AddRelativeForce(new Vector3(0, -gravity, 0), ForceMode.Acceleration);
-    }
+
 
     private void OnCollisionEnter(Collision collision)
     {
