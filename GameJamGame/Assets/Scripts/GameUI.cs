@@ -22,6 +22,8 @@ public class GameUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        survivorNumber = GameObject.FindGameObjectsWithTag("Enemy").Length;
+
         timer = timer - Time.deltaTime;
 
         timer = (Mathf.Round(timer * 100) / 100);
@@ -29,7 +31,7 @@ public class GameUI : MonoBehaviour
         // When the level is beat
         if (survivorNumber == 0)
         {
-            SceneManager.LoadScene("EventHandler");
+            SceneManager.LoadScene("AssetHandler");
 
             score++;
 
