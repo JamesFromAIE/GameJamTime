@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 6810663271520408487}
   - component: {fileID: 8746167913764284269}
   - component: {fileID: 7472387928337497886}
-  m_Layer: 0
+  - component: {fileID: 5262655285976483624}
+  - component: {fileID: 3640533286925365294}
+  m_Layer: 8
   m_Name: Crane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,5 +95,31 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 11.08976, y: 49.954575, z: 7.5}
-  m_Center: {x: 4.115574, y: 24.977287, z: 3.75}
+  m_Size: {x: 7.738533, y: 4.1546087, z: 7.5}
+  m_Center: {x: 3.7601433, y: 2.0773044, z: 3.75}
+--- !u!65 &5262655285976483624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7088768140732614328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.5904083, y: 17.864223, z: 4.6565256}
+  m_Center: {x: 3.7093658, y: 13.095766, z: 3.7500043}
+--- !u!65 &3640533286925365294
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7088768140732614328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8640213, y: 19.692219, z: 3.234789}
+  m_Center: {x: 3.8616982, y: 31.882994, z: 3.7500067}
