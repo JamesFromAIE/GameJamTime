@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject Player;
     Rigidbody Rb;
 
+    private float pitchMax = 0.6f;
+    private float pitch;
+    private float pitchMin = 1.4f;
 
     //move vars
     [SerializeField] float MoveJump;
@@ -58,6 +61,12 @@ public class PlayerController : MonoBehaviour
             if (isGrounded)
             {
                 Rb.AddRelativeForce(new Vector3(0.0f, jumpForce * chargeUp.percentage, forwardsJump * chargeUp.percentage), ForceMode.Impulse);
+
+                pitch = Random.Range(pitchMin, pitchMax);
+
+                LandSound.pitch = pitch;
+
+                LandSound.Play();
             }
         }
     }

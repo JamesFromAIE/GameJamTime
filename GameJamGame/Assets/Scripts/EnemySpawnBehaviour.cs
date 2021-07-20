@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class EnemySpawnBehaviour : MonoBehaviour
 {
-    [SerializeField] GameObject Survivor;
-    [SerializeField] Transform SP1;
-    [SerializeField] Transform SP2;
-    [SerializeField] Transform SP3;
-    [SerializeField] Transform SP4;
+    public GameObject Survivor;
+    public Transform SP1;
+    public Transform SP2;
+    public Transform SP3;
+    public Transform SP4;
     int targetPoint;
     void Start()
     {
+        Survivor = gameObject;
+
         targetPoint = Random.Range(1, 5);
 
         if (targetPoint == 1)
@@ -26,7 +28,7 @@ public class EnemySpawnBehaviour : MonoBehaviour
         {
             Survivor.transform.position = SP3.position;
         }
-        else
+        else 
         {
             Survivor.transform.position = SP4.position;
         }
